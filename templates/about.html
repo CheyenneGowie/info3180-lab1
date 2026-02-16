@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>My Website - About</title>
+    <meta charset="UTF-8">
+    <title>My Website - About</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css') }}">
 </head>
 <body>
-<h1>Cheyenne Gowie</h1>
-<p>I am a student at UWI Mona studying marketing with a minor in IT. I enjoy web development and learning new tech skills!</p>
+    <div class="container">
+        <h1>Cheyenne Gowie</h1>
+         <img src="{{ url_for('static', filename='images/my_photo.jpeg') }}" alt="My Photo" width="300">
+        <p>I am a student at UWI Mona pursuing a Bsc in Marketing with a minor in IT and special credits in Chemistry. I enjoy Web development and learning new tech skills!</p>
+       
+    </div>
 </body>
 </html>
-
